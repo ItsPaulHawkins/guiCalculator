@@ -8,7 +8,13 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Button Content="+" HorizontalAlignment="Left" Margin="64,75,0,0" VerticalAlignment="Top" Width="27" Height="25" Click="operation_Clicked"/>
-        <Button Content="-" HorizontalAlignment="Left" Margin="64,111,0,0" VerticalAlignment="Top" Width="27" Height="25" Click="operation_Clicked"/>
+        <Button Content="-" HorizontalAlignment="Left" Margin="64,105,0,0" VerticalAlignment="Top" Width="27" Height="25" Click="operation_Clicked"/>
+        <TextBlock HorizontalAlignment="Left" Margin="64,37,0,0" TextWrapping="Wrap" Text="Answer: " VerticalAlignment="Top" Name="stupid"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="64,141,0,0" VerticalAlignment="Top" Width="27" Height="25" Click="operation_Clicked" RenderTransformOrigin="0.56,-1.209"/>
+        <Button Content="/" HorizontalAlignment="Left" Margin="64,180,0,0" VerticalAlignment="Top" Width="27" Height="25" Click="operation_Clicked"/>
+        <Button Content="=" HorizontalAlignment="Left" Margin="64,218,0,0" VerticalAlignment="Top" Width="27" Height="28" Click="equal_Clicked"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="170,75,0,0" TextWrapping="Wrap" Text="First Number" VerticalAlignment="Top" Width="79" Name="firstNumber"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="271,75,0,0" TextWrapping="Wrap" Text="Second Number" VerticalAlignment="Top" Width="99" x:Name="secondNumber"/>
 
     </Grid>
 </Window>

@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace guiCalculator
 {
@@ -20,9 +21,30 @@ namespace guiCalculator
     /// </summary>
     public partial class MainWindow : Window
     {
+        public int firstNumberInt = 0;
+        public int secondNumberInt = 0;
+        public string operation = "";
+        
+
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        async void operation_Clicked(object sender, RoutedEventArgs e)
+        {
+            firstNumberInt = Int32.Parse(firstNumber.Text);
+
+        }
+
+        private void equal_Clicked(object sender, RoutedEventArgs e)
+        {
+            
+        }
+        public string determineOperation(string operation)
+        {
+            
+            return operation;
         }
     }
 }
